@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <title>Número Par ou Ímpar</title>
+    <link rel="stylesheet" href="estilos.css">
+    <meta charset="utf-8">
+</head>
+
+<body>
+    <h1>Verifique se seu número é par ou ímpar</h1>
+    <script>
+        var numero = prompt("Insira o Número", "Seu nº aqui");
+        numero = parseInt(numero);
+
+        if (numero === 0) {
+            document.write("O Número é zero");
+        }
+        else if (numero % 2 === 0) {
+            document.write("O Número é par");
+        }
+        else {
+            document.write("O número é Ímpar");
+        }
+    </script>
+</body>
+
+</html>

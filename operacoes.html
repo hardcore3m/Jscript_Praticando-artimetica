@@ -1,49 +1,55 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-    <head>
-        <title>Operação Artitméticas com clique do botão</title>
-        <meta charset="utf-8">
-        <link rel="stylesheet" href="estilos.css">
-        <script>
-            var n1, n2, resultado;
-            function addNumero() {
-                n1 = parseInt(document.getElementById("num1").value)
-                n2 = parseInt(document.getElementById("num2").value)
-                resultado = n1 + n2;
-                document.getElementById("resultado").value = resultado;
-            }
-            function subNumero() {
-                n1 = parseInt(document.getElementById("num1").value)
-                n2 = parseInt(document.getElementById("num2").value)
-                resultado = n1 - n2;
-                document.getElementById("resultado").value = resultado;
-            }
-            function mulNumero() {
-                n1 = parseInt(document.getElementById("num1").value)
-                n2 = parseInt(document.getElementById("num2").value)
-                resultado = n1 * n2;
-                document.getElementById("resultado").value = resultado;
-            }
-            function divNumero() {
-                n1 = parseInt(document.getElementById("num1").value)
-                n2 = parseInt(document.getElementById("num2").value)
-                resultado = n1 / n2;
-                document.getElementById("resultado").value = resultado;
-            }
-        </script>
-    </head>
-    <body>
-          <h1>Operação Artitméticas com clique do botão</h1>
 
-          <form >
-              Primeiro Número <input id="num1" type="text"><br><hr>
-              Segundo Número <input id="num2" type="text"><br><hr>
-              Resultado <input id="resultado" type="text"><br><hr>
-              <input type="button" value="Adiciona" onclick="addNumero()">
-              <input type="button" value="Subtrai" onclick="subNumero()">
-              <input type="button" value="Multiplica" onclick="mulNumero()">
-              <input type="button" value="Divide" onclick="divNumero()">
+<head>
+    <title>Operação Artitméticas com clique do botão</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="estilos.css">
+    <script>
+        var n1, n2, resultado;
+        function addNumero() {
+            n1 = parseInt(document.getElementById("num1").value)
+            n2 = parseInt(document.getElementById("num2").value)
+            resultado = n1 + n2;
+            document.getElementById("resultado").value = resultado;
+        }
+        function subNumero() {
+            n1 = parseInt(document.getElementById("num1").value)
+            n2 = parseInt(document.getElementById("num2").value)
+            resultado = n1 - n2;
+            document.getElementById("resultado").value = resultado;
+        }
+        function mulNumero() {
+            n1 = parseInt(document.getElementById("num1").value)
+            n2 = parseInt(document.getElementById("num2").value)
+            resultado = n1 * n2;
+            document.getElementById("resultado").value = resultado;
+        }
+        function divNumero() {
+            n1 = parseInt(document.getElementById("num1").value)
+            n2 = parseInt(document.getElementById("num2").value)
+            resultado = n1 / n2;
+            document.getElementById("resultado").value = resultado;
+        }
+    </script>
+</head>
 
-          </form>
-    </body>
+<body>
+    <h1>Operação Artitméticas com clique do botão</h1>
+
+    <form>
+        Primeiro Número <input id="num1" type="text"><br>
+        <hr>
+        Segundo Número <input id="num2" type="text"><br>
+        <hr>
+        Resultado <input id="resultado" type="text"><br>
+        <hr>
+        <input type="button" value="Adiciona" onclick="addNumero()">
+        <input type="button" value="Subtrai" onclick="subNumero()">
+        <input type="button" value="Multiplica" onclick="mulNumero()">
+        <input type="button" value="Divide" onclick="divNumero()">
+
+    </form>
+</body>
+
 </html>
